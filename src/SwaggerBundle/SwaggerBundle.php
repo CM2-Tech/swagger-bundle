@@ -1,6 +1,6 @@
 <?php
 
-namespace App\SwaggerBundle;
+namespace CM2\SwaggerBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

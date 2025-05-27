@@ -28,7 +28,7 @@ Sem ela, o acesso será negado.
 
 Acesse a URL:
 
-/swagger?token=seu_token_secreto
+/\_swagger?token=seu_token_secreto
 
 Ela retornará o conteúdo do swagger.json com base nas anotações presentes em:
 
