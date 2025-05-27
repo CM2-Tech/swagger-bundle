@@ -12,7 +12,7 @@
   },
   "autoload": {
     "psr-4": {
-      "CM2\\SwaggerBundle\\": "src/"
+      "CM2\\SwaggerBundle\\": "src/SwaggerBundle"
     }
   },
   "extra": {
