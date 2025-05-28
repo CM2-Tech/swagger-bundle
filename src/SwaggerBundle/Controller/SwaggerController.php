@@ -10,6 +10,13 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class SwaggerController
 {
+    private array $sources;
+
+    public function __construct(array $sources)
+    {
+        $this->sources = $sources;
+    }
+
     #[Route('/_swagger', name: 'swagger_json')]
     public function __invoke(Request $request): JsonResponse
     {
@@ -20,8 +27,7 @@ class SwaggerController
             return new JsonResponse(['error' => 'Access denied'], 403);
         }
 
-        $sources = [__DIR__.'/../../../src/Controller', __DIR__.'/../../../src/Entity'];
-        $openapi = Generator::scan($sources);
+        $openapi = Generator::scan($this->sources);
 
         return new JsonResponse(json_decode($openapi->toJson(), true));
     }

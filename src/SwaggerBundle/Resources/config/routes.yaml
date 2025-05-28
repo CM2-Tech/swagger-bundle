@@ -1,3 +1,0 @@
-swagger_bundle:
-  resource: '@SwaggerBundle/Controller/'
-  type: annotation

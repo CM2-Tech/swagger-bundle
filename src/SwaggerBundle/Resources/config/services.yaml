@@ -1,3 +1,0 @@
-services:
-  CM2\SwaggerBundle\Controller\SwaggerController:
-    tags: ['controller.service_arguments']
